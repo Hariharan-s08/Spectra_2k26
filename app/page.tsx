@@ -2,7 +2,6 @@ import { Hero } from '@/components/home/hero'
 import {
   AboutPreview,
   Highlights,
-  PrizeHighlight,
   EventsPreview,
   RegisterCta,
   ContactPreview,
@@ -15,7 +14,6 @@ export default function HomePage() {
       <AboutPreview />
       <Highlights />
       <EventsPreview />
-      <PrizeHighlight />
       <RegisterCta />
       <ContactPreview />
     </>
