@@ -1,24 +1,22 @@
 import type { Metadata } from 'next'
 import {
-  ArrowRight,
   CalendarDays,
   Clock,
+  MapPin,
   Wallet,
   PartyPopper,
   MessageSquareOff,
   Gavel,
-  Info,
 } from 'lucide-react'
 import { PageHeader } from '@/components/page-header'
 import { SectionHeading } from '@/components/section-heading'
 import { MetaGrid } from '@/components/event-detail'
 import { Reveal } from '@/components/reveal'
-import { CtaButton } from '@/components/cta-button'
 
 export const metadata: Metadata = {
   title: 'Fun Fusion — SPECTRA 2K26',
   description:
-    'Fun Fusion non-technical event at SPECTRA 2K26 — 15 October 2026, forenoon. Free entry.',
+    'Fun Fusion non-technical event at SPECTRA 2K26 — 15 October 2026, afternoon. Free entry with no registration required.',
 }
 
 const meta = [
@@ -30,7 +28,12 @@ const meta = [
   {
     icon: Clock,
     label: 'Time',
-    value: 'Forenoon (FN)',
+    value: 'Afternoon (AN)',
+  },
+  {
+    icon: MapPin,
+    label: 'Venue',
+    value: 'SJB 102',
   },
   {
     icon: PartyPopper,
@@ -39,7 +42,7 @@ const meta = [
   },
   {
     icon: Wallet,
-    label: 'Registration Fee',
+    label: 'Entry',
     value: 'Free',
   },
 ]
@@ -74,7 +77,7 @@ export default function FunFusionPage() {
         description="A fun-filled non-technical event designed to bring energy, creativity, quick thinking, and entertainment to SPECTRA 2K26."
       >
         <span className="inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/10 px-4 py-1.5 font-mono text-xs font-semibold tracking-widest text-accent">
-          FREE · FOR EVERYONE
+          FREE · NO REGISTRATION
         </span>
       </PageHeader>
 
@@ -83,17 +86,15 @@ export default function FunFusionPage() {
           <MetaGrid items={meta} />
         </Reveal>
 
-        {/* Registration Note */}
+        {/* Participation Note */}
         <Reveal className="mt-8">
-          <div className="flex items-start gap-4 rounded-2xl border border-accent/30 bg-accent/10 p-6">
-            <Info className="mt-0.5 size-5 shrink-0 text-accent" />
-
+          <div className="rounded-2xl border border-accent/30 bg-accent/10 p-6">
             <p className="text-sm leading-relaxed text-foreground/90">
               <span className="font-semibold text-accent">
-                Free participation.
+                Free participation — no registration required.
               </span>{' '}
-              Fun Fusion will be conducted during the forenoon session on
-              15 October 2026.
+              Join us at SJB 102 during the afternoon session on 15 October
+              2026 and enjoy an exciting non-technical experience.
             </p>
           </div>
         </Reveal>
@@ -103,7 +104,7 @@ export default function FunFusionPage() {
           <SectionHeading
             align="center"
             eyebrow="Format"
-            title="Two rounds of pure fun"
+            title="Two Rounds of Pure Fun"
           />
         </Reveal>
 
@@ -225,17 +226,36 @@ export default function FunFusionPage() {
           </Reveal>
         </div>
 
-        {/* Registration */}
-        <Reveal className="mt-14 text-center">
-          <p className="mx-auto mb-6 max-w-xl text-sm leading-relaxed text-muted-foreground">
-            Join Fun Fusion during the forenoon session on 15 October 2026
-            and enjoy an exciting non-technical experience.
-          </p>
+        {/* Event Information */}
+        <Reveal className="mt-14">
+          <div className="rounded-2xl border border-border bg-card p-8 sm:p-10">
+            <SectionHeading
+              eyebrow="Event Information"
+              title="Fun Fusion"
+            />
 
-          <CtaButton href="/register" size="lg">
-            Register for Fun Fusion
-            <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
-          </CtaButton>
+            <div className="mt-5 space-y-3 text-sm leading-relaxed text-muted-foreground">
+              <p>
+                <span className="font-semibold text-foreground">Date:</span>{' '}
+                15 October 2026
+              </p>
+
+              <p>
+                <span className="font-semibold text-foreground">Time:</span>{' '}
+                Afternoon (AN)
+              </p>
+
+              <p>
+                <span className="font-semibold text-foreground">Venue:</span>{' '}
+                SJB 102
+              </p>
+
+              <p>
+                <span className="font-semibold text-foreground">Entry:</span>{' '}
+                Free — no registration required
+              </p>
+            </div>
+          </div>
         </Reveal>
       </section>
     </>
