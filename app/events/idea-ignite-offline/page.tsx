@@ -10,7 +10,6 @@ import {
 } from 'lucide-react'
 import { PageHeader } from '@/components/page-header'
 import { SectionHeading } from '@/components/section-heading'
-import { PrizePodium } from '@/components/prize-podium'
 import { DomainList } from '@/components/domain-list'
 import { MetaGrid, InfoCard } from '@/components/event-detail'
 import { Reveal } from '@/components/reveal'
@@ -19,7 +18,7 @@ import { CtaButton } from '@/components/cta-button'
 export const metadata: Metadata = {
   title: 'Idea Ignite (Offline) — SPECTRA 2K26',
   description:
-    'Idea Ignite offline paper presentation at SPECTRA 2K26 — 15 October 2026, afternoon. Team of 2–3, ₹100 per participant, prizes up to ₹5,000.',
+    'Idea Ignite offline paper presentation at SPECTRA 2K26 — 15 October 2026, forenoon. Team of 2–3, ₹100 per participant.',
 }
 
 const meta = [
@@ -36,12 +35,12 @@ const meta = [
   {
     icon: Clock,
     label: 'Time',
-    value: 'Afternoon (AN)',
+    value: 'Forenoon (FN)',
   },
   {
     icon: MapPin,
-    label: 'Mode',
-    value: 'Offline',
+    label: 'Venue',
+    value: 'SJB 105',
   },
   {
     icon: Users,
@@ -73,25 +72,12 @@ export default function IdeaIgniteOfflinePage() {
           <MetaGrid items={meta} />
         </Reveal>
 
-        {/* Prizes */}
-        <Reveal className="mt-16">
-          <SectionHeading
-            eyebrow="Rewards"
-            title="Prize pool"
-            align="center"
-          />
-
-          <div className="mt-8">
-            <PrizePodium />
-          </div>
-        </Reveal>
-
         {/* Description */}
         <Reveal className="mt-16">
           <div className="rounded-2xl border border-border bg-card p-8 sm:p-10">
             <SectionHeading
               eyebrow="Overview"
-              title="Event description"
+              title="Event Description"
             />
 
             <div className="mt-5 space-y-4 leading-relaxed text-muted-foreground">
@@ -103,9 +89,10 @@ export default function IdeaIgniteOfflinePage() {
               </p>
 
               <p>
-                Participants are encouraged to explore emerging technologies
-                and real-world problems while presenting their ideas with
-                clarity and confidence.
+                The paper must be related to SDG Goals and Electronics and
+                Communication Engineering. Participants are encouraged to
+                explore emerging technologies and real-world problems while
+                presenting their ideas with clarity and confidence.
               </p>
             </div>
           </div>
@@ -132,9 +119,11 @@ export default function IdeaIgniteOfflinePage() {
               title="Rules & Guidelines"
               items={[
                 'Each team must consist of 2–3 members.',
-                'Participants can choose a topic from the listed domains or an open-choice topic.',
-                'The presented work should be original.',
-                'The presentation should clearly explain the proposed idea, research, or solution.',
+                'The paper must be related to SDG Goals and Electronics and Communication Engineering.',
+                'Only original work is accepted. Plagiarism will lead to disqualification.',
+                'Each team must present within the allotted time, followed by a Q&A session.',
+                'Teams should keep their presentation and demonstration materials ready before their scheduled slot.',
+                'Any form of malpractice or unfair practice may result in immediate disqualification.',
               ]}
             />
           </Reveal>
@@ -144,9 +133,11 @@ export default function IdeaIgniteOfflinePage() {
               title="Important Instructions"
               items={[
                 'Carry a valid college ID and registration confirmation.',
-                'Bring your presentation file as a backup.',
-                'Report to the venue on 15 October 2026.',
-                'Participants must follow the instructions given by the event coordinators.',
+                'Report to SJB 105 on 15 October 2026 during the forenoon session.',
+                'Any technical or presentation-related issue must be immediately reported to the event coordinators.',
+                'Participants must follow the instructions provided by the event coordinators and jury.',
+                'The organizers may modify the event schedule in case of unavoidable circumstances.',
+                'The decision of the jury and organizers will be final and binding.',
               ]}
             />
           </Reveal>
@@ -154,6 +145,10 @@ export default function IdeaIgniteOfflinePage() {
 
         {/* Registration */}
         <Reveal className="mt-14 text-center">
+          <p className="mb-4 text-sm text-muted-foreground">
+            Registration closes on 11 October 2026
+          </p>
+
           <CtaButton href="/register" size="lg">
             Register for Idea Ignite
             <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
