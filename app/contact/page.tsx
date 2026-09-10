@@ -27,12 +27,32 @@ export default function ContactPage() {
               </p>
 
               <h2 className="text-xl font-semibold text-foreground">
-                {CONTACT.convenor.name}
+                {CONTACT.Convenor.name}
               </h2>
 
               <p className="mt-1 text-muted-foreground">
-                {CONTACT.convenor.role}
+                {CONTACT.Convenor.role}
               </p>
+            </div>
+
+            {/* Co-Convenors */}
+            <div className="rounded-2xl border border-border bg-card p-6">
+              <p className="mb-4 font-mono text-xs uppercase tracking-widest text-primary">
+                Co-Convenors
+              </p>
+
+              <div className="space-y-5">
+                {CONTACT.Co_Convenors.map((coordinator) => (
+                  <div key={coordinator.name}>
+                    <h2 className="text-lg font-semibold text-foreground">
+                      {coordinator.name}
+                    </h2>
+                    <p className="text-muted-foreground">
+                      {coordinator.role}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
 
             {/* Faculty Coordinators */}
@@ -42,7 +62,7 @@ export default function ContactPage() {
               </p>
 
               <div className="space-y-5">
-                {CONTACT.facultyCoordinators.map((coordinator) => (
+                {CONTACT.Faculty_Coordinators.map((coordinator) => (
                   <div key={coordinator.name}>
                     <h2 className="text-lg font-semibold text-foreground">
                       {coordinator.name}
@@ -62,7 +82,7 @@ export default function ContactPage() {
               </p>
 
               <div className="space-y-5">
-                {CONTACT.studentCoordinators.map((coordinator) => (
+                {CONTACT.Student_Coordinators.map((coordinator) => (
                   <div key={coordinator.name}>
                     <h2 className="text-lg font-semibold text-foreground">
                       {coordinator.name}
@@ -125,6 +145,11 @@ export default function ContactPage() {
 
             <p className="mt-1 text-muted-foreground">
               Department of Electronics and Communication Engineering
+            </p>
+
+            <p className="mt-3 text-sm leading-6 text-muted-foreground">
+              Old Nagore Main Road, Thethi Village, Nagore,
+              Nagapattinam, Tamil Nadu – 611002
             </p>
           </div>
         </div>
