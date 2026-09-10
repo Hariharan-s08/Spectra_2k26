@@ -1,6 +1,5 @@
 import {
   ArrowRight,
-  Trophy,
   Users,
   Lightbulb,
   Cpu,
@@ -23,7 +22,7 @@ export function AboutPreview() {
           <SectionHeading
             eyebrow="About the Symposium"
             title="Where ideas meet innovation"
-            description="SPECTRA 2K26 is a national level technical symposium hosted by the Department of Electronics and Communication Engineering. It brings together students to present ideas, solve engineering challenges, and participate in technical and non-technical events."
+            description="SPECTRA 2K26 is a technical symposium organized by the Department of Electronics and Communication Engineering in association with SPARKS Association. It brings together students to present ideas, solve engineering challenges, and participate in technical and non-technical events."
           />
 
           <p className="mt-5 leading-relaxed text-muted-foreground">
@@ -43,9 +42,9 @@ export function AboutPreview() {
         <Reveal delay={120} className="grid grid-cols-2 gap-4">
           {[
             { icon: Cpu, label: 'Technical Events', value: '02' },
-            { icon: Gamepad2, label: 'Fun Event', value: '01' },
+            { icon: Gamepad2, label: 'Non-Technical Event', value: '01' },
             { icon: Radio, label: 'Online Event', value: '01' },
-            { icon: Trophy, label: 'Technical Prizes', value: '₹18K' },
+            { icon: Users, label: 'Team Size', value: '2–3' },
           ].map(({ icon: Icon, label, value }) => (
             <div
               key={label}
@@ -70,18 +69,18 @@ export function AboutPreview() {
 const highlights = [
   {
     icon: Lightbulb,
-    title: 'Paper Presentations',
-    text: 'Present innovative ideas, research, and technical solutions through Idea Ignite in offline and online formats.',
+    title: 'Idea Ignite',
+    text: 'Present innovative ideas, research, and technical solutions through paper presentations in online and offline formats.',
   },
   {
     icon: Cpu,
     title: 'Circuitrix',
-    text: 'Test your electronics and circuit knowledge through quiz, puzzle and circuit-building, followed by fault detection and fixing.',
+    text: 'Test your electronics and circuit knowledge through quiz, puzzle-to-circuit, and fault detection challenges.',
   },
   {
     icon: Gamepad2,
     title: 'Fun Fusion',
-    text: 'Take part in an exciting non-technical event designed for teamwork, entertainment, and fun.',
+    text: 'Take part in an exciting free non-technical event designed for teamwork, creativity, entertainment, and fun.',
   },
 ]
 
@@ -117,62 +116,6 @@ export function Highlights() {
           ))}
         </div>
       </div>
-    </section>
-  )
-}
-
-/* ---------------- Prize highlight ---------------- */
-export function PrizeHighlight() {
-  return (
-    <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-      <Reveal>
-        <div className="relative overflow-hidden rounded-3xl border border-border bg-card p-8 sm:p-12">
-          <div
-            className="pointer-events-none absolute -right-10 -top-10 h-56 w-56 rounded-full bg-gold/10 blur-3xl"
-            aria-hidden="true"
-          />
-
-          <div className="relative grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
-            <div>
-              <p className="inline-flex items-center gap-2 font-mono text-xs font-medium tracking-[0.25em] text-gold uppercase">
-                <Trophy className="size-4" />
-                Prize Highlights
-              </p>
-
-              <h2 className="mt-3 text-balance text-3xl font-bold tracking-tight sm:text-4xl">
-                Win up to ₹5,000 in technical events
-              </h2>
-
-              <p className="mt-4 max-w-xl leading-relaxed text-muted-foreground">
-                Idea Ignite (Offline) and Circuitrix offer prizes for the top
-                three positions. Compete for the podium and showcase your
-                technical skills at SPECTRA 2K26.
-              </p>
-            </div>
-
-            <div className="flex gap-3">
-              {[
-                { medal: '🥇', amt: '₹5,000' },
-                { medal: '🥈', amt: '₹3,000' },
-                { medal: '🥉', amt: '₹1,000' },
-              ].map((p) => (
-                <div
-                  key={p.amt}
-                  className="glass flex flex-col items-center rounded-2xl border border-border px-5 py-4"
-                >
-                  <span className="text-3xl" aria-hidden="true">
-                    {p.medal}
-                  </span>
-
-                  <span className="mt-2 font-mono text-lg font-bold text-foreground">
-                    {p.amt}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </Reveal>
     </section>
   )
 }
@@ -282,11 +225,11 @@ export function ContactPreview() {
                 </p>
 
                 <p className="text-sm text-muted-foreground">
-                  {CONTACT.convenor.name}
+                  {CONTACT.Convenor.name}
                 </p>
 
                 <p className="mt-1 text-sm text-muted-foreground">
-                  {CONTACT.convenor.role}
+                  {CONTACT.Convenor.role}
                 </p>
               </div>
             </div>
