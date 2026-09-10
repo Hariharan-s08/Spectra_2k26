@@ -13,12 +13,12 @@ export type SymposiumEvent = {
   fee: string
   registrationDeadline?: string
   venue?: string
+  registrationRequired?: boolean
   hasPrizes?: boolean
   description: string
   rounds?: string[]
   href: string
   featured?: boolean
-  registrationRequired?: boolean
 }
 
 export const DOMAINS = [
