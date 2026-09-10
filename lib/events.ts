@@ -47,7 +47,7 @@ export const events: Event[] = [
     title: 'Idea Ignite',
     tagline: 'Paper Presentation',
     date: '15 October 2026',
-    time: 'Afternoon (AN)',
+    time: 'Forenoon (FN)',
     mode: 'Offline',
     teamSize: '2–3 Members',
     fee: '₹100 per head',
@@ -62,7 +62,7 @@ export const events: Event[] = [
     title: 'Circuitrix',
     tagline: 'Debug Event',
     date: '15 October 2026',
-    time: 'Afternoon (AN)',
+    time: 'Forenoon (FN)',
     mode: 'Offline',
     teamSize: '2–3 Members',
     fee: '₹100 per head',
@@ -82,7 +82,7 @@ export const events: Event[] = [
     title: 'Fun Fusion',
     tagline: 'A surprise activity designed for fun, excitement, and entertainment.',
     date: '15 October 2026',
-    time: 'Forenoon (FN)',
+    time: 'Afternoon (AN)',
     mode: 'Offline',
     teamSize: '2–3 Members',
     fee: 'Free',
@@ -108,12 +108,16 @@ export const events: Event[] = [
 export const CONTACT = {
   email: 'spectra@egspec.org',
 
-  convenor: {
+  Convenor: {
     name: 'Dr. M. Malathi',
     role: 'Prof / ECE',
   },
 
-  facultyCoordinators: [
+    Co_Convenor: {
+    name: 'Dr. M. Malathi',
+    role: 'Prof / ECE',
+  },
+  Faculty_Coordinators: [
     {
       name: 'Dr. C. Madhuvanesan',
       role: 'ASP / ECE',
@@ -124,7 +128,7 @@ export const CONTACT = {
     },
   ],
 
-  studentCoordinators: [
+  Student_Coordinators: [
     {
       name: 'Ms. Mohana S',
       role: 'President',
