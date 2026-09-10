@@ -1,23 +1,24 @@
 export const REGISTER_GFORM_URL =
   'https://forms.gle/gy6iy1nXrwoEgHfw9'
 
-export type Event = {
+export type SymposiumEvent = {
   id: string
-  title: string
+  name: string
+  type: string
   tagline: string
   date: string
   time: string
-  mode: 'Offline' | 'Online'
+  category: 'online' | 'offline'
   teamSize: string
   fee: string
   registrationDeadline?: string
   venue?: string
-  registrationRequired?: boolean
-  prizePool?: string
+  hasPrizes?: boolean
   description: string
   rounds?: string[]
   href: string
   featured?: boolean
+  registrationRequired?: boolean
 }
 
 export const DOMAINS = [
@@ -29,18 +30,20 @@ export const DOMAINS = [
   'Open Innovation',
 ]
 
-export const events: Event[] = [
+export const events: SymposiumEvent[] = [
   {
     id: 'idea-ignite-offline',
-    title: 'Idea Ignite',
-    tagline: 'Paper Presentation',
+    name: 'Idea Ignite',
+    type: 'Paper Presentation',
+    tagline: 'Present your innovative ideas and research.',
     date: '15 October 2026',
     time: 'Forenoon (FN)',
-    mode: 'Offline',
+    category: 'offline',
     teamSize: '2–3 Members',
     fee: '₹100 per head',
     registrationDeadline: '11 October 2026',
     venue: 'SJB 105',
+    hasPrizes: false,
     registrationRequired: true,
     description:
       'Present your innovative ideas and research in emerging areas of electronics, communication, embedded systems, 6G, OFC, SDGs, and more.',
@@ -50,22 +53,24 @@ export const events: Event[] = [
 
   {
     id: 'circuitrix',
-    title: 'Circuitrix',
-    tagline: 'Debug Event',
+    name: 'Circuitrix',
+    type: 'Debug Event',
+    tagline: 'Test your electronics and debugging skills.',
     date: '15 October 2026',
     time: 'Forenoon (FN)',
-    mode: 'Offline',
+    category: 'offline',
     teamSize: '2–3 Members',
     fee: '₹100 per head',
     registrationDeadline: '14 October 2026',
     venue: 'SJB 102',
+    hasPrizes: false,
     registrationRequired: true,
     description:
       'Test your electronics and debugging skills through quizzes, circuit building, fault detection, and fixing challenges.',
     rounds: [
       'Round 1 — Quiz',
-      'Round 2 — Puzzle & Build the Circuit',
-      'Round 3 — Fault Detection & Fixing',
+      'Round 2 — Puzzle to Circuit',
+      'Round 3 — Fault Detection',
     ],
     href: '/events/circuitrix',
     featured: true,
@@ -73,15 +78,16 @@ export const events: Event[] = [
 
   {
     id: 'fun-fusion',
-    title: 'Fun Fusion',
-    tagline:
-      'A surprise activity designed for fun, excitement, and entertainment.',
+    name: 'Fun Fusion',
+    type: 'Non-Technical Event',
+    tagline: 'Fun, excitement, and entertainment.',
     date: '15 October 2026',
     time: 'Afternoon (AN)',
-    mode: 'Offline',
-    teamSize: '2–3 Members',
+    category: 'offline',
+    teamSize: 'Open',
     fee: 'Free',
     venue: 'SJB 102',
+    hasPrizes: false,
     registrationRequired: false,
     description:
       'Take a break from the technical challenges and enjoy an entertaining non-technical event filled with fun and excitement.',
@@ -90,15 +96,17 @@ export const events: Event[] = [
 
   {
     id: 'idea-ignite-online',
-    title: 'Idea Ignite',
+    name: 'Idea Ignite',
+    type: 'Online Paper Presentation',
     tagline: 'Online Paper Presentation',
     date: '14 October 2026',
     time: 'Full Day',
-    mode: 'Online',
+    category: 'online',
     teamSize: '2–3 Members',
     fee: 'Free',
     registrationDeadline: '10 October 2026',
     venue: 'Online',
+    hasPrizes: false,
     registrationRequired: true,
     description:
       'Present your innovative ideas and research online in emerging areas of electronics, communication, embedded systems, 6G, OFC, SDGs, and more.',
@@ -114,16 +122,17 @@ export const CONTACT = {
     role: 'Prof / ECE',
   },
 
-Co_Convenors: [
-  {
-    name: 'Dr. S. Senthilkumar',
-    role: 'ASP / ECE',
-  },
-  {
-    name: 'Dr. M. Nuthal Srinivasan',
-    role: 'ASP / ECE',
-  },
-],
+  Co_Convenors: [
+    {
+      name: 'Dr. S. Senthilkumar',
+      role: 'ASP / ECE',
+    },
+    {
+      name: 'Dr. M. Nuthal Srinivasan',
+      role: 'ASP / ECE',
+    },
+  ],
+
   Faculty_Coordinators: [
     {
       name: 'Dr. C. Mathuvanesan',
