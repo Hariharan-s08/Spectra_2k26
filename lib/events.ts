@@ -10,6 +10,9 @@ export type Event = {
   mode: 'Offline' | 'Online'
   teamSize: string
   fee: string
+  registrationDeadline?: string
+  venue?: string
+  registrationRequired?: boolean
   prizePool?: string
   description: string
   rounds?: string[]
@@ -26,21 +29,6 @@ export const DOMAINS = [
   'Open Innovation',
 ]
 
-export const PRIZES = [
-  {
-    position: '1st Prize',
-    amount: '₹5,000',
-  },
-  {
-    position: '2nd Prize',
-    amount: '₹3,000',
-  },
-  {
-    position: '3rd Prize',
-    amount: '₹1,000',
-  },
-]
-
 export const events: Event[] = [
   {
     id: 'idea-ignite-offline',
@@ -51,12 +39,15 @@ export const events: Event[] = [
     mode: 'Offline',
     teamSize: '2–3 Members',
     fee: '₹100 per head',
-    prizePool: '₹9,000',
+    registrationDeadline: '11 October 2026',
+    venue: 'SJB 105',
+    registrationRequired: true,
     description:
       'Present your innovative ideas and research in emerging areas of electronics, communication, embedded systems, 6G, OFC, SDGs, and more.',
     href: '/events/idea-ignite-offline',
     featured: true,
   },
+
   {
     id: 'circuitrix',
     title: 'Circuitrix',
@@ -66,7 +57,9 @@ export const events: Event[] = [
     mode: 'Offline',
     teamSize: '2–3 Members',
     fee: '₹100 per head',
-    prizePool: '₹9,000',
+    registrationDeadline: '14 October 2026',
+    venue: 'SJB 102',
+    registrationRequired: true,
     description:
       'Test your electronics and debugging skills through quizzes, circuit building, fault detection, and fixing challenges.',
     rounds: [
@@ -77,28 +70,36 @@ export const events: Event[] = [
     href: '/events/circuitrix',
     featured: true,
   },
+
   {
     id: 'fun-fusion',
     title: 'Fun Fusion',
-    tagline: 'A surprise activity designed for fun, excitement, and entertainment.',
+    tagline:
+      'A surprise activity designed for fun, excitement, and entertainment.',
     date: '15 October 2026',
     time: 'Afternoon (AN)',
     mode: 'Offline',
     teamSize: '2–3 Members',
     fee: 'Free',
+    venue: 'SJB 102',
+    registrationRequired: false,
     description:
       'Take a break from the technical challenges and enjoy an entertaining non-technical event filled with fun and excitement.',
     href: '/events/fun-fusion',
   },
+
   {
     id: 'idea-ignite-online',
     title: 'Idea Ignite',
     tagline: 'Online Paper Presentation',
     date: '14 October 2026',
-    time: 'Online',
+    time: 'Full Day',
     mode: 'Online',
     teamSize: '2–3 Members',
     fee: 'Free',
+    registrationDeadline: '10 October 2026',
+    venue: 'Online',
+    registrationRequired: true,
     description:
       'Present your innovative ideas and research online in emerging areas of electronics, communication, embedded systems, 6G, OFC, SDGs, and more.',
     href: '/events/idea-ignite-online',
@@ -113,13 +114,19 @@ export const CONTACT = {
     role: 'Prof / ECE',
   },
 
-    Co_Convenor: {
-    name: 'Dr. M. Malathi',
-    role: 'Prof / ECE',
+Co_Convenors: [
+  {
+    name: 'Dr. S. Senthilkumar',
+    role: 'ASP / ECE',
   },
+  {
+    name: 'Dr. M. Nuthal Srinivasan',
+    role: 'ASP / ECE',
+  },
+],
   Faculty_Coordinators: [
     {
-      name: 'Dr. C. Madhuvanesan',
+      name: 'Dr. C. Mathuvanesan',
       role: 'ASP / ECE',
     },
     {
@@ -130,13 +137,13 @@ export const CONTACT = {
 
   Student_Coordinators: [
     {
-      name: 'Ms. Mohana S',
-      role: 'President',
+      name: 'Mohana S',
+      role: 'IV Year ECE',
       phone: '7825080914',
     },
     {
-      name: 'Mr. Keerthivasan R',
-      role: 'Vice President',
+      name: 'Keerthivasan R',
+      role: 'III Year ECE',
       phone: '9597245927',
     },
   ],
