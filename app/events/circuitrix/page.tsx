@@ -3,6 +3,7 @@ import {
   ArrowRight,
   CalendarDays,
   Clock,
+  MapPin,
   Users,
   Wallet,
   Brain,
@@ -11,7 +12,6 @@ import {
 } from 'lucide-react'
 import { PageHeader } from '@/components/page-header'
 import { SectionHeading } from '@/components/section-heading'
-import { PrizePodium } from '@/components/prize-podium'
 import { MetaGrid, InfoCard } from '@/components/event-detail'
 import { Reveal } from '@/components/reveal'
 import { CtaButton } from '@/components/cta-button'
@@ -31,7 +31,12 @@ const meta = [
   {
     icon: Clock,
     label: 'Time',
-    value: 'Afternoon (AN)',
+    value: 'Forenoon (FN)',
+  },
+  {
+    icon: MapPin,
+    label: 'Venue',
+    value: 'SJB 102',
   },
   {
     icon: Users,
@@ -53,12 +58,12 @@ const rounds = [
   },
   {
     icon: Puzzle,
-    title: 'Puzzle & Build the Circuit',
+    title: 'Puzzle to Circuit',
     text: 'Solve the given puzzle and build the required circuit accurately within the given time.',
   },
   {
     icon: Wrench,
-    title: 'Fault Detection & Fixing',
+    title: 'Fault Detection',
     text: 'Identify faults in the given circuit and fix them successfully.',
   },
 ]
@@ -81,25 +86,12 @@ export default function CircuitrixPage() {
           <MetaGrid items={meta} />
         </Reveal>
 
-        {/* Prizes */}
-        <Reveal className="mt-16">
-          <SectionHeading
-            eyebrow="Rewards"
-            title="Prize pool"
-            align="center"
-          />
-
-          <div className="mt-8">
-            <PrizePodium />
-          </div>
-        </Reveal>
-
         {/* Rounds */}
         <Reveal className="mt-16">
           <SectionHeading
             align="center"
             eyebrow="Format"
-            title="Three electrifying rounds"
+            title="Three Rounds"
           />
         </Reveal>
 
@@ -143,7 +135,7 @@ export default function CircuitrixPage() {
           <div className="rounded-2xl border border-border bg-card p-8 sm:p-10">
             <SectionHeading
               eyebrow="Overview"
-              title="Event description"
+              title="Event Description"
             />
 
             <div className="mt-5 space-y-4 leading-relaxed text-muted-foreground">
@@ -156,9 +148,8 @@ export default function CircuitrixPage() {
               </p>
 
               <p>
-                The event begins with a quiz, followed by a puzzle and
-                circuit-building challenge, and concludes with fault
-                detection and fixing.
+                The event begins with a quiz, followed by a puzzle-to-circuit
+                challenge, and concludes with fault detection and fixing.
               </p>
             </div>
           </div>
@@ -173,7 +164,9 @@ export default function CircuitrixPage() {
                 'Team size: 2–3 members.',
                 'Registration fee: ₹100 per participant.',
                 'Event date: 15 October 2026.',
-                'Event session: Afternoon (AN).',
+                'Event session: Forenoon (FN).',
+                'Venue: SJB 102.',
+                'Registration closes on 14 October 2026.',
               ]}
             />
           </Reveal>
@@ -183,9 +176,8 @@ export default function CircuitrixPage() {
               title="Rounds"
               items={[
                 'Round 1 — Quiz.',
-                'Round 2 — Puzzle and Build the Circuit.',
-                'Round 3 — Fault Detection and Fixing.',
-                'Prizes: ₹5,000, ₹3,000 and ₹1,000.',
+                'Round 2 — Puzzle to Circuit.',
+                'Round 3 — Fault Detection.',
               ]}
             />
           </Reveal>
@@ -193,6 +185,10 @@ export default function CircuitrixPage() {
 
         {/* Registration */}
         <Reveal className="mt-14 text-center">
+          <p className="mb-4 text-sm text-muted-foreground">
+            Registration closes on 14 October 2026
+          </p>
+
           <CtaButton href="/register" size="lg">
             Register for Circuitrix
             <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
