@@ -139,7 +139,11 @@ export function EventsPreview() {
 
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {events.map((event, i) => (
-          <Reveal key={event.id} delay={i * 100}>
+          <Reveal
+            key={event.id}
+            delay={i * 100}
+            className="h-full min-w-0"
+          >
             <EventCard event={event} />
           </Reveal>
         ))}
@@ -213,7 +217,6 @@ export function ContactPreview() {
           </Reveal>
 
           <Reveal delay={120} className="space-y-4">
-            {/* Convenor */}
             <div className="glass flex items-start gap-4 rounded-2xl border border-border p-6">
               <span className="inline-flex size-11 items-center justify-center rounded-xl bg-primary/15 text-primary">
                 <Users className="size-5" />
@@ -234,7 +237,6 @@ export function ContactPreview() {
               </div>
             </div>
 
-            {/* Email */}
             <a
               href={`mailto:${CONTACT.email}`}
               className="glass flex items-center gap-4 rounded-2xl border border-border p-6 transition-colors hover:border-primary/50"
