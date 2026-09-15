@@ -63,9 +63,6 @@
   --accent: oklch(0.62 0.16 270);
   --accent-foreground: oklch(0.98 0.01 240);
 
-  /* Prize gold */
-  --gold: oklch(0.82 0.15 85);
-
   --destructive: oklch(0.62 0.22 25);
 
   --border: oklch(0.75 0.05 220 / 14%);
