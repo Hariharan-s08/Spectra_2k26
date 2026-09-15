@@ -1,34 +1,25 @@
+import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/next'
-import type { Metadata, Viewport } from 'next'
 import { Space_Grotesk, JetBrains_Mono } from 'next/font/google'
+
+import './globals.css'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
-import './globals.css'
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
   variable: '--font-space-grotesk',
-  display: 'swap',
 })
 
-const jetbrainsMono = JetBrains_Mono({
+const jetBrainsMono = JetBrains_Mono({
   subsets: ['latin'],
   variable: '--font-jetbrains-mono',
-  display: 'swap',
 })
 
 export const metadata: Metadata = {
-  title: 'SPECTRA 2K26 — Innovate. Connect. Create.',
+  title: 'SPECTRA 2K26 — International Technical Symposium',
   description:
-    'SPECTRA 2K26 — National level technical symposium organized by the Department of Electronics and Communication Engineering, E. G. S. Pillay Engineering College, in association with SPARKS Association. 14 & 15 October 2026.',
-  generator: 'v0.app',
-}
-
-export const viewport: Viewport = {
-  colorScheme: 'dark',
-  themeColor: '#0a1020',
-  width: 'device-width',
-  initialScale: 1,
+    'SPECTRA 2K26 — International Technical Symposium organized by the Department of Electronics and Communication Engineering, E.G.S. Pillay Engineering College.',
 }
 
 export default function RootLayout({
@@ -39,13 +30,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} bg-background`}
+      className={`${spaceGrotesk.variable} ${jetBrainsMono.variable}`}
     >
-      <body className="font-sans antialiased">
+      <body className="min-h-screen bg-background font-sans text-foreground antialiased">
         <Header />
-        <main className="min-h-screen">{children}</main>
+        {children}
         <Footer />
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+        <Analytics />
       </body>
     </html>
   )
