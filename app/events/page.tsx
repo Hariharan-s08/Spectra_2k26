@@ -36,7 +36,11 @@ export default function EventsPage() {
 
         <div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {offline.map((event, i) => (
-            <Reveal key={event.id} delay={i * 100}>
+            <Reveal
+              key={event.id}
+              delay={i * 100}
+              className="h-full min-w-0"
+            >
               <EventCard event={event} />
             </Reveal>
           ))}
@@ -58,7 +62,11 @@ export default function EventsPage() {
 
           <div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {online.map((event, i) => (
-              <Reveal key={event.id} delay={i * 100}>
+              <Reveal
+                key={event.id}
+                delay={i * 100}
+                className="h-full min-w-0"
+              >
                 <EventCard event={event} />
               </Reveal>
             ))}
