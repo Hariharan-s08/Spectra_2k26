@@ -28,7 +28,7 @@ export function Hero() {
           style={{ animationDelay: '80ms' }}
         >
           <Sparkles className="size-3.5" />
-          National Level Technical Symposium
+          International Technical Symposium
         </div>
 
         <h1
