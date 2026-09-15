@@ -14,7 +14,6 @@ export type SymposiumEvent = {
   registrationDeadline?: string
   venue?: string
   registrationRequired?: boolean
-  hasPrizes?: boolean
   description: string
   rounds?: string[]
   href: string
@@ -43,7 +42,6 @@ export const events: SymposiumEvent[] = [
     fee: '₹100 per head',
     registrationDeadline: '11 October 2026',
     venue: 'SJB 105',
-    hasPrizes: false,
     registrationRequired: true,
     description:
       'Present your innovative ideas and research in emerging areas of electronics, communication, embedded systems, 6G, OFC, SDGs, and more.',
@@ -63,7 +61,6 @@ export const events: SymposiumEvent[] = [
     fee: '₹100 per head',
     registrationDeadline: '14 October 2026',
     venue: 'SJB 102',
-    hasPrizes: false,
     registrationRequired: true,
     description:
       'Test your electronics and debugging skills through quizzes, circuit building, fault detection, and fixing challenges.',
@@ -84,10 +81,9 @@ export const events: SymposiumEvent[] = [
     date: '15 October 2026',
     time: 'Afternoon (AN)',
     category: 'offline',
-    teamSize: 'Open',
+    teamSize: '2–3 Members',
     fee: 'Free',
     venue: 'SJB 102',
-    hasPrizes: false,
     registrationRequired: false,
     description:
       'Take a break from the technical challenges and enjoy an entertaining non-technical event filled with fun and excitement.',
@@ -106,7 +102,6 @@ export const events: SymposiumEvent[] = [
     fee: 'Free',
     registrationDeadline: '10 October 2026',
     venue: 'Online',
-    hasPrizes: false,
     registrationRequired: true,
     description:
       'Present your innovative ideas and research online in emerging areas of electronics, communication, embedded systems, 6G, OFC, SDGs, and more.',
