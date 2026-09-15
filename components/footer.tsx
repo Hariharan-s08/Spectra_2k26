@@ -24,7 +24,7 @@ export function Footer() {
           <Logo />
 
           <p className="max-w-xs text-sm leading-relaxed text-muted-foreground">
-            National level technical symposium by the Department of Electronics
+            International technical symposium by the Department of Electronics
             and Communication Engineering, E. G. S. Pillay Engineering College,
             in association with SPARKS Association.
           </p>
