@@ -6,8 +6,8 @@ import { cn } from '@/lib/utils'
 
 export function EventCard({ event }: { event: SymposiumEvent }) {
   return (
-    <article className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/50 hover:shadow-[0_0_36px_oklch(0.78_0.16_200/0.14)]">
-      <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-primary/10 blur-3xl transition-opacity duration-300 group-hover:opacity-100 opacity-40" />
+    <article className="group relative flex h-full min-h-[560px] flex-col overflow-hidden rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/50 hover:shadow-[0_0_36px_oklch(0.78_0.16_200/0.14)]">
+      <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-primary/10 blur-3xl opacity-40 transition-opacity duration-300 group-hover:opacity-100" />
 
       <div className="mb-4 flex items-center justify-between gap-3">
         <span
@@ -28,37 +28,37 @@ export function EventCard({ event }: { event: SymposiumEvent }) {
         {event.type}
       </p>
 
-      <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+      <p className="mt-3 min-h-[3.5rem] text-sm leading-relaxed text-muted-foreground">
         {event.tagline}
       </p>
 
       <dl className="mt-5 grid grid-cols-2 gap-3 border-t border-border pt-5 text-sm">
-        <div className="flex items-center gap-2">
-          <Clock className="size-4 text-primary" />
+        <div className="flex items-start gap-2">
+          <Clock className="mt-0.5 size-4 shrink-0 text-primary" />
           <div>
             <dt className="text-xs text-muted-foreground">Date</dt>
             <dd className="font-medium">{event.date}</dd>
           </div>
         </div>
 
-        <div className="flex items-center gap-2">
-          <Clock className="size-4 text-primary" />
+        <div className="flex items-start gap-2">
+          <Clock className="mt-0.5 size-4 shrink-0 text-primary" />
           <div>
             <dt className="text-xs text-muted-foreground">Time</dt>
             <dd className="font-medium">{event.time}</dd>
           </div>
         </div>
 
-        <div className="flex items-center gap-2">
-          <Users className="size-4 text-primary" />
+        <div className="flex items-start gap-2">
+          <Users className="mt-0.5 size-4 shrink-0 text-primary" />
           <div>
             <dt className="text-xs text-muted-foreground">Team</dt>
             <dd className="font-medium">{event.teamSize}</dd>
           </div>
         </div>
 
-        <div className="flex items-center gap-2">
-          <Wallet className="size-4 text-primary" />
+        <div className="flex items-start gap-2">
+          <Wallet className="mt-0.5 size-4 shrink-0 text-primary" />
           <div>
             <dt className="text-xs text-muted-foreground">Fee</dt>
             <dd className="font-medium">{event.fee}</dd>
@@ -68,7 +68,10 @@ export function EventCard({ event }: { event: SymposiumEvent }) {
 
       {event.venue && (
         <p className="mt-4 text-xs text-muted-foreground">
-          Venue: <span className="font-medium text-foreground">{event.venue}</span>
+          Venue:{' '}
+          <span className="font-medium text-foreground">
+            {event.venue}
+          </span>
         </p>
       )}
 
@@ -83,7 +86,7 @@ export function EventCard({ event }: { event: SymposiumEvent }) {
 
       <Link
         href={event.href}
-        className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-primary/80"
+        className="mt-auto inline-flex items-center gap-2 pt-8 text-sm font-semibold text-primary transition-colors hover:text-primary/80"
       >
         View Event
         <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
