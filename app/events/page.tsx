@@ -11,15 +11,15 @@ export const metadata: Metadata = {
 }
 
 export default function EventsPage() {
-  const offline = events.filter((event) => event.mode === 'Offline')
-  const online = events.filter((event) => event.mode === 'Online')
+  const offline = events.filter((event) => event.category === 'offline')
+  const online = events.filter((event) => event.category === 'online')
 
   return (
     <main className="min-w-0">
       <PageHeader
         eyebrow="Events"
         title="The SPECTRA 2K26 lineup"
-        description="Technical brilliance meets non-technical fun. Pick your events, build your team, and get ready to compete."
+        description="Technical brilliance meets non-technical fun. Pick your events, build your team, and get ready to participate."
       />
 
       {/* Offline Events */}
