@@ -148,7 +148,7 @@ export const CONTACT = {
     {
       name: 'Keerthivasan R',
       role: 'III Year ECE',
-      phone: '9597245927',
+      phone: '7871076754',
     },
   ],
 }
