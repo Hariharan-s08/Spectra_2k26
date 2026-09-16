@@ -10,6 +10,7 @@ export function Hero() {
       <div className="circuit-grid absolute inset-0 opacity-70" aria-hidden="true" />
       <div className="radial-fade absolute inset-0" aria-hidden="true" />
       <CircuitLines />
+
       {/* ambient glows */}
       <div
         className="pointer-events-none absolute left-1/2 top-24 h-72 w-72 -translate-x-1/2 rounded-full bg-primary/15 blur-[120px]"
@@ -19,7 +20,10 @@ export function Hero() {
       <div className="relative mx-auto max-w-5xl px-4 pb-20 pt-32 text-center sm:px-6 sm:pt-40 lg:px-8">
         <div className="animate-fade-up flex justify-center">
           <span className="animate-float-slow inline-flex items-center justify-center rounded-2xl border border-border glass p-4 glow-primary">
-            <Logo showWordmark={false} className="[&_svg]:h-14 [&_svg]:w-14" />
+            <Logo
+              showWordmark={false}
+              className="[&_svg]:h-14 [&_svg]:w-14"
+            />
           </span>
         </div>
 
@@ -52,8 +56,13 @@ export function Hero() {
           className="animate-fade-up mt-6 space-y-1 text-sm leading-relaxed text-muted-foreground sm:text-base"
           style={{ animationDelay: '260ms' }}
         >
-          <p>Organized by the Department of Electronics and Communication Engineering</p>
-          <p className="font-medium text-foreground">E. G. S. Pillay Engineering College</p>
+          <p>
+            Organized by the Department of Electronics and Communication
+            Engineering
+          </p>
+          <p className="font-medium text-foreground">
+            E. G. S. Pillay Engineering College
+          </p>
           <p>In association with SPARKS Association</p>
         </div>
 
@@ -71,16 +80,29 @@ export function Hero() {
           className="animate-fade-up mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row"
           style={{ animationDelay: '380ms' }}
         >
-          <CtaButton href="/register" size="lg" className="w-full sm:w-auto">
+          <CtaButton
+            href="/register"
+            size="lg"
+            className="w-full sm:w-auto"
+          >
             Register Now
             <ArrowRight className="transition-transform group-hover:translate-x-0.5" />
           </CtaButton>
-          <CtaButton href="/events" variant="outline" size="lg" className="w-full sm:w-auto">
+
+          <CtaButton
+            href="/events"
+            variant="outline"
+            size="lg"
+            className="w-full sm:w-auto"
+          >
             Explore Events
           </CtaButton>
         </div>
 
-        <div className="animate-fade-up mx-auto mt-14 max-w-2xl" style={{ animationDelay: '440ms' }}>
+        <div
+          className="animate-fade-up mx-auto mt-14 max-w-2xl"
+          style={{ animationDelay: '440ms' }}
+        >
           <Countdown />
         </div>
       </div>
