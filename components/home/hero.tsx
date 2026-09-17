@@ -7,20 +7,36 @@ import { CircuitLines } from '@/components/circuit-lines'
 export function Hero() {
   return (
     <section className="relative overflow-hidden">
-      {/* EGSPEC header image */}
-      <div className="relative z-10 w-full bg-background">
+      {/* EGSPEC header */}
+      <div className="relative z-10 w-full bg-white">
         <Image
           src="/egspec-header.png"
           alt="E.G.S. Pillay Engineering College"
           width={1536}
           height={192}
           priority
-          className="h-auto w-full"
+          className="block h-auto w-full"
+        />
+
+        {/* Blue EGSPEC ribbon */}
+        <Image
+          src="/egspec-ribbon.png"
+          alt="Top Institutions in Cauvery Delta Zone"
+          width={236}
+          height={709}
+          priority
+          className="absolute right-[2.5%] top-0 z-20 h-[260px] w-auto sm:h-[300px] lg:h-[340px]"
         />
       </div>
 
-      <div className="circuit-grid absolute inset-0 opacity-70" aria-hidden="true" />
-      <div className="radial-fade absolute inset-0" aria-hidden="true" />
+      <div
+        className="circuit-grid absolute inset-0 opacity-70"
+        aria-hidden="true"
+      />
+      <div
+        className="radial-fade absolute inset-0"
+        aria-hidden="true"
+      />
       <CircuitLines />
 
       {/* ambient glow */}
