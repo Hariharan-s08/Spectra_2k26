@@ -7,7 +7,7 @@ import { CircuitLines } from '@/components/circuit-lines'
 export function Hero() {
   return (
     <section className="relative overflow-hidden">
-      {/* EGSPEC header */}
+      {/* EGSPEC Header */}
       <div className="relative z-10 w-full bg-white">
         <Image
           src="/egspec-header.png"
@@ -18,35 +18,39 @@ export function Hero() {
           className="block h-auto w-full"
         />
 
-        {/* Blue EGSPEC ribbon */}
+        {/* Blue EGSPEC Ribbon */}
         <Image
           src="/egspec-ribbon.png"
           alt="Top Institutions in Cauvery Delta Zone"
           width={236}
           height={709}
           priority
-          className="absolute right-[2.5%] top-0 z-20 h-[260px] w-auto sm:h-[300px] lg:h-[340px]"
+          className="absolute right-[2%] top-0 z-20 h-[190px] w-auto sm:h-[220px] lg:h-[250px]"
         />
       </div>
 
+      {/* Background Effects */}
       <div
         className="circuit-grid absolute inset-0 opacity-70"
         aria-hidden="true"
       />
+
       <div
         className="radial-fade absolute inset-0"
         aria-hidden="true"
       />
+
       <CircuitLines />
 
-      {/* ambient glow */}
+      {/* Ambient Glow */}
       <div
         className="pointer-events-none absolute left-1/2 top-24 h-72 w-72 -translate-x-1/2 rounded-full bg-primary/15 blur-[120px]"
         aria-hidden="true"
       />
 
+      {/* Hero Content */}
       <div className="relative mx-auto max-w-5xl px-4 pb-20 pt-24 text-center sm:px-6 sm:pt-32 lg:px-8">
-        {/* Main title */}
+        {/* SPECTRA 2K26 */}
         <h1
           className="animate-fade-up text-balance text-5xl font-bold tracking-tight text-glow sm:text-7xl lg:text-8xl"
           style={{ animationDelay: '80ms' }}
@@ -57,7 +61,7 @@ export function Hero() {
           </span>
         </h1>
 
-        {/* Symposium name */}
+        {/* International Technical Symposium */}
         <p
           className="animate-fade-up mt-4 font-mono text-base font-semibold tracking-[0.12em] text-primary uppercase sm:text-xl"
           style={{ animationDelay: '140ms' }}
@@ -65,7 +69,7 @@ export function Hero() {
           International Technical Symposium
         </p>
 
-        {/* Organized by */}
+        {/* Organized By */}
         <div
           className="animate-fade-up mt-8 space-y-2"
           style={{ animationDelay: '200ms' }}
@@ -101,6 +105,7 @@ export function Hero() {
           style={{ animationDelay: '320ms' }}
         >
           <CalendarDays className="size-5" />
+
           <span className="font-mono text-sm font-semibold tracking-widest sm:text-base">
             14 &amp; 15 OCTOBER 2026
           </span>
