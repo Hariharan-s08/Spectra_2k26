@@ -30,7 +30,7 @@ export function Footer() {
           </p>
 
           <p className="font-mono text-xs tracking-widest text-primary">
-            14 &amp; 10 OCTOBER 2026
+            10 &amp; 14 OCTOBER 2026
           </p>
         </div>
 
