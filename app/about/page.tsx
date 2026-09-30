@@ -90,7 +90,7 @@ export default function AboutPage() {
               <div className="glass rounded-2xl border border-border p-6">
                 <Users className="size-6 text-primary" />
 
-                <p className="mt-4 text-2xl font-bold">2–3</p>
+                <p className="mt-4 text-2xl font-bold">1–3</p>
 
                 <p className="mt-1 text-sm text-muted-foreground">
                   Members per team
