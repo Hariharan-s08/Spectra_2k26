@@ -174,7 +174,7 @@ export function RegisterCta() {
             </h2>
 
             <p className="mx-auto mt-4 max-w-xl text-pretty leading-relaxed text-muted-foreground">
-              Register your team and get ready for SPECTRA 2K26 on 14 and 15
+              Register your team and get ready for SPECTRA 2K26 on 10 and 14
               October 2026.
             </p>
 
