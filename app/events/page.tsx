@@ -1,3 +1,4 @@
+tsx
 import type { Metadata } from 'next'
 import { PageHeader } from '@/components/page-header'
 import { EventCard } from '@/components/event-card'
@@ -26,7 +27,7 @@ export default function EventsPage() {
       <section className="mx-auto w-full max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
         <Reveal className="mb-8 flex flex-col items-start gap-4 sm:mb-10 sm:flex-row sm:flex-wrap sm:items-center">
           <span className="max-w-full rounded-xl border border-primary/40 bg-primary/10 px-4 py-2 text-center font-mono text-xs font-semibold tracking-widest text-primary sm:text-sm">
-            OFFLINE · 15 OCTOBER 2026
+            OFFLINE · 10 OCTOBER 2026
           </span>
 
           <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
@@ -76,3 +77,4 @@ export default function EventsPage() {
     </main>
   )
 }
+
