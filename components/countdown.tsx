@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 
-const TARGET = new Date('2026-10-15T09:00:00+05:30').getTime()
+const TARGET = new Date('2026-10-10T09:00:00+05:30').getTime()
 
 function getRemaining() {
   const now = Date.now()
