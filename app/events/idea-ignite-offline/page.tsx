@@ -18,7 +18,7 @@ import { CtaButton } from '@/components/cta-button'
 export const metadata: Metadata = {
   title: 'Idea Ignite (Offline) — SPECTRA 2K26',
   description:
-    'Idea Ignite offline paper presentation at SPECTRA 2K26 — 15 October 2026, forenoon. Team of 2–3, ₹100 per participant.',
+    'Idea Ignite offline paper presentation at SPECTRA 2K26 — 10 October 2026, forenoon. Team of 2–3, ₹100 per participant.',
 }
 
 const meta = [
@@ -30,7 +30,7 @@ const meta = [
   {
     icon: CalendarDays,
     label: 'Date',
-    value: '15 October 2026',
+    value: '10 October 2026',
   },
   {
     icon: Clock,
@@ -45,7 +45,7 @@ const meta = [
   {
     icon: Users,
     label: 'Team Size',
-    value: '2–3 members',
+    value: '1–3 members',
   },
   {
     icon: Wallet,
@@ -118,7 +118,7 @@ export default function IdeaIgniteOfflinePage() {
             <InfoCard
               title="Rules & Guidelines"
               items={[
-                'Each team must consist of 2–3 members.',
+                'Each team must consist of 1–3 members.',
                 'The paper must be related to SDG Goals and Electronics and Communication Engineering.',
                 'Only original work is accepted. Plagiarism will lead to disqualification.',
                 'Each team must present within the allotted time, followed by a Q&A session.',
@@ -133,7 +133,7 @@ export default function IdeaIgniteOfflinePage() {
               title="Important Instructions"
               items={[
                 'Carry a valid college ID and registration confirmation.',
-                'Report to SJB 105 on 15 October 2026 during the forenoon session.',
+                'Report to SJB 105 on 10 October 2026 during the forenoon session.',
                 'Any technical or presentation-related issue must be immediately reported to the event coordinators.',
                 'Participants must follow the instructions provided by the event coordinators and jury.',
                 'The organizers may modify the event schedule in case of unavoidable circumstances.',
