@@ -35,7 +35,7 @@ export function Countdown() {
   return (
     <div>
       <p className="mb-3 font-mono text-xs font-medium tracking-[0.25em] text-muted-foreground uppercase">
-        Countdown to 15 October 2026
+        Countdown to 10 October 2026
       </p>
       <div className="grid grid-cols-4 gap-2 sm:gap-3">
         {units.map((unit) => (
