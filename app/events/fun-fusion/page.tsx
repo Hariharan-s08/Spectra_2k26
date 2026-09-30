@@ -16,14 +16,14 @@ import { Reveal } from '@/components/reveal'
 export const metadata: Metadata = {
   title: 'Fun Fusion — SPECTRA 2K26',
   description:
-    'Fun Fusion non-technical event at SPECTRA 2K26 — 15 October 2026, afternoon. Free entry with no registration required.',
+    'Fun Fusion non-technical event at SPECTRA 2K26 — 10 October 2026, afternoon. Free entry with no registration required.',
 }
 
 const meta = [
   {
     icon: CalendarDays,
     label: 'Date',
-    value: '15 October 2026',
+    value: '10 October 2026',
   },
   {
     icon: Clock,
@@ -93,7 +93,7 @@ export default function FunFusionPage() {
               <span className="font-semibold text-accent">
                 Free participation — no registration required.
               </span>{' '}
-              Join us at SJB 102 during the afternoon session on 15 October
+              Join us at SJB 102 during the afternoon session on 10 October
               2026 and enjoy an exciting non-technical experience.
             </p>
           </div>
@@ -237,7 +237,7 @@ export default function FunFusionPage() {
             <div className="mt-5 space-y-3 text-sm leading-relaxed text-muted-foreground">
               <p>
                 <span className="font-semibold text-foreground">Date:</span>{' '}
-                15 October 2026
+                10 October 2026
               </p>
 
               <p>
