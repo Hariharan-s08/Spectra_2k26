@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next'
 import {
   ArrowRight,
@@ -19,14 +20,14 @@ import { CtaButton } from '@/components/cta-button'
 export const metadata: Metadata = {
   title: 'Circuitrix — SPECTRA 2K26',
   description:
-    'Circuitrix is a three-round circuit debugging event at SPECTRA 2K26 on 15 October 2026.',
+    'Circuitrix is a three-round circuit debugging event at SPECTRA 2K26 on 10 October 2026.',
 }
 
 const meta = [
   {
     icon: CalendarDays,
     label: 'Date',
-    value: '15 October 2026',
+    value: '10 October 2026',
   },
   {
     icon: Clock,
@@ -163,7 +164,7 @@ export default function CircuitrixPage() {
               items={[
                 'Team size: 2–3 members.',
                 'Registration fee: ₹100 per participant.',
-                'Event date: 15 October 2026.',
+                'Event date: 10 October 2026.',
                 'Event session: Forenoon (FN).',
                 'Venue: SJB 102.',
                 'Registration closes on 14 October 2026.',
@@ -198,3 +199,4 @@ export default function CircuitrixPage() {
     </>
   )
 }
+
