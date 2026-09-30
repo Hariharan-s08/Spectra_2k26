@@ -107,7 +107,7 @@ export function Hero() {
           <CalendarDays className="size-5" />
 
           <span className="font-mono text-sm font-semibold tracking-widest sm:text-base">
-            14 &amp; 15 OCTOBER 2026
+            14 &amp; 10 OCTOBER 2026
           </span>
         </div>
 
