@@ -40,7 +40,7 @@ export const events: SymposiumEvent[] = [
     category: 'offline',
     teamSize: '1–3 Members',
     fee: '₹100 per head',
-    registrationDeadline: '11 October 2026',
+    registrationDeadline: '05 October 2026',
     venue: 'SJB 105',
     registrationRequired: true,
     description:
