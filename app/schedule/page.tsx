@@ -18,7 +18,7 @@ import { CtaButton } from '@/components/cta-button'
 export const metadata: Metadata = {
   title: 'Schedule — SPECTRA 2K26',
   description:
-    'Full schedule for SPECTRA 2K26 — online Idea Ignite on 14 October 2026 and offline events on 15 October 2026.',
+    'Full schedule for SPECTRA 2K26 — online Idea Ignite on 14 October 2026 and offline events on 10 October 2026.',
 }
 
 const offlineTimeline = [
@@ -104,7 +104,7 @@ export default function SchedulePage() {
 
                 <span className="inline-flex items-center gap-2">
                   <Users className="size-4 text-accent/80" />
-                  Team of 2–3 members
+                  Team of 1–3 members
                 </span>
 
                 <span className="inline-flex items-center gap-2">
@@ -119,7 +119,7 @@ export default function SchedulePage() {
               </div>
 
               <p className="mt-5 text-sm text-muted-foreground">
-                Registration closes on 10 October 2026.
+                Registration closes on 05 October 2026.
               </p>
 
               <div className="mt-7">
@@ -141,7 +141,7 @@ export default function SchedulePage() {
         <Reveal>
           <div className="mb-10 flex flex-wrap items-center gap-4">
             <span className="rounded-xl border border-primary/40 bg-primary/10 px-4 py-2 font-mono text-sm font-semibold tracking-widest text-primary">
-              15 OCTOBER 2026
+              10 OCTOBER 2026
             </span>
 
             <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
