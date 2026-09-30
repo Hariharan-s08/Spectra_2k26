@@ -18,7 +18,7 @@ import { CtaButton } from '@/components/cta-button'
 export const metadata: Metadata = {
   title: 'Idea Ignite (Online) — SPECTRA 2K26',
   description:
-    'Idea Ignite online paper presentation at SPECTRA 2K26 — 14 October 2026, full day. Team of 2–3 members, free registration.',
+    'Idea Ignite online paper presentation at SPECTRA 2K26 — 14 October 2026, full day. Team of 1–3 members, free registration.',
 }
 
 const meta = [
@@ -45,7 +45,7 @@ const meta = [
   {
     icon: Users,
     label: 'Team Size',
-    value: '2–3 members',
+    value: '1–3 members',
   },
   {
     icon: Wallet,
@@ -80,7 +80,7 @@ export default function IdeaIgniteOnlinePage() {
                 Free registration.
               </span>{' '}
               The online presentation will be conducted for the full day on
-              14 October 2026. Registration closes on 10 October 2026.
+              14 October 2026. Registration closes on 05 October 2026.
             </p>
           </div>
         </Reveal>
@@ -102,7 +102,7 @@ export default function IdeaIgniteOnlinePage() {
               </p>
 
               <p>
-                Each team must consist of 2–3 members. The paper must be
+                Each team must consist of 1–3 members. The paper must be
                 related to SDG Goals and Electronics and Communication
                 Engineering.
               </p>
@@ -130,7 +130,7 @@ export default function IdeaIgniteOnlinePage() {
             <InfoCard
               title="Rules & Guidelines"
               items={[
-                'Each team must consist of 2–3 members.',
+                'Each team must consist of 1–3 members.',
                 'The paper must be related to SDG Goals and Electronics and Communication Engineering.',
                 'Only original work is accepted. Plagiarism will lead to disqualification.',
                 'Each team must present within the allotted time, followed by a Q&A session.',
@@ -160,7 +160,7 @@ export default function IdeaIgniteOnlinePage() {
         {/* Registration */}
         <Reveal className="mt-14 text-center">
           <p className="mb-4 text-sm text-muted-foreground">
-            Registration closes on 10 October 2026
+            Registration closes on 05 October 2026
           </p>
 
           <CtaButton href="/register" size="lg">
