@@ -47,10 +47,10 @@ export default function AboutPage() {
               <p>
                 SPECTRA 2K26 is conducted on{' '}
                 <span className="font-semibold text-foreground">
-                  14 and 15 October 2026
+                  10 and 14 October 2026
                 </span>
                 . Idea Ignite Online takes place on 14 October, followed by
-                the offline events on 15 October.
+                the offline events on 10 October.
               </p>
             </div>
           </Reveal>
@@ -192,7 +192,7 @@ export default function AboutPage() {
             </p>
 
             <h2 className="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">
-              14 & 15 October 2026
+              10 & 14 October 2026
             </h2>
 
             <p className="mx-auto mt-5 max-w-2xl leading-relaxed text-muted-foreground">
