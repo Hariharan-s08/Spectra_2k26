@@ -16,29 +16,29 @@ const registrationDetails = [
     event: 'Idea Ignite — Online',
     date: '14 October 2026',
     mode: 'Online',
-    team: '2–3 Members',
+    team: '1–3 Members',
     fee: 'Free',
-    deadline: '10 October 2026',
+    deadline: '05 October 2026',
   },
   {
     event: 'Idea Ignite — Offline',
-    date: '15 October 2026',
+    date: '10 October 2026',
     mode: 'Offline — FN',
-    team: '2–3 Members',
+    team: '1–3 Members',
     fee: '₹100 per head',
-    deadline: '11 October 2026',
+    deadline: '05 October 2026',
   },
   {
     event: 'Circuitrix',
-    date: '15 October 2026',
+    date: '10 October 2026',
     mode: 'Offline — FN',
-    team: '2–3 Members',
+    team: '1–3 Members',
     fee: '₹100 per head',
-    deadline: '14 October 2026',
+    deadline: '08 October 2026',
   },
   {
     event: 'Fun Fusion',
-    date: '15 October 2026',
+    date: '10 October 2026',
     mode: 'Offline — AN',
     team: 'Open',
     fee: 'Free',
@@ -52,7 +52,7 @@ export default function RegisterPage() {
       <PageHeader
         eyebrow="Register"
         title="Secure your spot at SPECTRA 2K26"
-        description="Register and get ready for SPECTRA 2K26 on 14 & 15 October 2026."
+        description="Register and get ready for SPECTRA 2K26 on 10 & 14 October 2026."
       />
 
       <section className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
